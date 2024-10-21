@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Rotating Cube</title>
+    <link rel="stylesheet" href="fontModeno.css">
+    <style>
+        .cube {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 25%;
+            background-color: transparent;
+        }
+
+        .cube {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(30deg) rotateY(30deg);
+            animation: rotate 6s infinite linear;
+            zoom: 65%;
+        }
+
+        .face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .front  { transform: translateZ(100px); background: red; }
+        .back   { transform: rotateY(180deg) translateZ(100px); background: yellow; }
+        .left   { transform: rotateY(-90deg) translateZ(100px); background: green; }
+        .right  { transform: rotateY(90deg) translateZ(100px); background: blue; }
+        .top    { transform: rotateX(90deg) translateZ(100px); background: purple; }
+        .bottom { transform: rotateX(-90deg) translateZ(100px); background: orange; }
+
+        @keyframes rotate {
+            0%   { transform: rotateX(30deg) rotateY(0deg); }
+            100% { transform: rotateX(30deg) rotateY(360deg); }
+        }
+
+        h5{
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>3 Dimensions!</h1>
+    <div class="cube">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+    </div>
+    <p>This effect was built with<br>
+        transform css option.<br>
+        this is the css code for it:<br></p>
+    <h5>
+        .cube {<br>
+            display: flex;<br>
+            justify-content: center;<br>
+            align-items: center;<br>
+            height: 100vh;<br>
+            margin: 25%;<br>
+            background-color: transparent;<br>
+        }<br>
+        <br>
+        .cube {<br>
+            width: 200px;<br>
+            height: 200px;<br>
+            position: relative;<br>
+            transform-style: preserve-3d;<br>
+            transform: rotateX(30deg) rotateY(30deg);<br>
+            animation: rotate 6s infinite linear;
+            zoom: 65%;<br>
+        }<br>
+        <br>
+        .face {<br>
+            position: absolute;<br>
+            width: 200px;<br>
+            height: 200px;<br>
+            background: rgba(255, 255, 255, 0.9);<br>
+            border: 2px solid #fff;<br>
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);<br>
+        }<br>
+        <br>
+        .front  { transform: translateZ(100px); background: red; }<br>
+        .back   { transform: rotateY(180deg) translateZ(100px); background: yellow; }<br>
+        .left   { transform: rotateY(-90deg) translateZ(100px); background: green; }<br>
+        .right  { transform: rotateY(90deg) translateZ(100px); background: blue; }<br>
+        .top    { transform: rotateX(90deg) translateZ(100px); background: purple; }<br>
+        .bottom { transform: rotateX(-90deg) translateZ(100px); background: orange; }
+        <br>
+        @keyframes rotate {<br>
+            0%   { transform: rotateX(30deg) rotateY(0deg); }<br>
+            100% { transform: rotateX(30deg) rotateY(360deg); }<br>
+        }
+    </h5>
+</body>
+</html>
+

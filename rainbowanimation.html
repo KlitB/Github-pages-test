@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow!</title>
+    <link rel="stylesheet" href="fontModeno.css">
+    <style>
+        @keyframes rainbowBackground {
+        0%   { background-color: red; }
+        14%  { background-color: orange; }
+        28%  { background-color: yellow; }
+        42%  { background-color: greenyellow; }
+        57%  { background-color: aqua; }
+        71%  { background-color: blue; }
+        85%  { background-color: purple; }
+        100% { background-color: palevioletred; }
+    }
+
+    div{
+        animation: rainbowBackground 8s infinite;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+
+    .a{
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+
+    html{
+        zoom: 80%;
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <p>Rainbow!</p>
+    </div>
+    <h3>
+        This animation was built with the<br>
+        @keyframes css rule.<br>
+        this is the css code for it:<br>
+    </h3>
+    <div class="a"><h4>
+        @keyframes rainbowBackground {<br>
+            0%   { background-color: red; }<br>
+            14%  { background-color: orange; }<br>
+            28%  { background-color: yellow; }<br>
+            42%  { background-color: greenyellow; }<br>
+            57%  { background-color: aqua; }<br>
+            71%  { background-color: blue; }<br>
+            85%  { background-color: purple; }<br>
+            100% { background-color: palevioletred; }<br>
+        }<br>
+    
+        div{<br>
+            animation: rainbowBackground 8s infinite;<br>
+            border: 1px solid black;<br>
+            border-radius: 15px;<br>
+        }
+    </h4></div>
+</body>
+</html>

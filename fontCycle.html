@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Cycle</title>
+    <link rel="stylesheet" href="fontModeno.css">
+
+    <style>
+
+        @keyframes fontCycle {
+    0% { font-family: 'Arial'; }
+    15% { font-family: "seismic-latin-variable",sans-serif;}
+    10% { font-family: 'Courier New'; }
+    20% { font-family: 'Georgia'; }
+    30% { font-family: 'Times New Roman'; }
+    40% { font-family: 'Verdana'; }
+    50% { font-family: 'Trebuchet MS'; }
+    60% { font-family: 'Comic Sans MS'; }
+    70% { font-family: 'Impact'; }
+    75% { font-family: Modeno;}
+    80% { font-family: 'Lucida Console'; }
+    90% { font-family: 'Tahoma'; }
+    100% { font-family: 'Arial'; }
+}
+
+h1 {
+    font-size: 24px;
+    animation: fontCycle 4s linear infinite;
+}
+
+h5{
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>CSS!</h1>
+    <p>This effect was built with the<br>
+        @keyframes css rule.<br>
+        this is the css code for it:<br></p>
+    <h5>
+        @keyframes fontCycle {<br>
+            0% { font-family: 'Arial'; }<br>
+            15% { font-family: "seismic-latin-variable",sans-serif;}<br>
+            10% { font-family: 'Courier New'; }<br>
+            20% { font-family: 'Georgia'; }<br>
+            30% { font-family: 'Times New Roman'; }<br>
+            40% { font-family: 'Verdana'; }<br>
+            50% { font-family: 'Trebuchet MS'; }<br>
+            60% { font-family: 'Comic Sans MS'; }<br>
+            70% { font-family: 'Impact'; }<br>
+            75% { font-family: Modeno;}<br>
+            80% { font-family: 'Lucida Console'; }<br>
+            90% { font-family: 'Tahoma'; }<br>
+            100% { font-family: 'Arial'; }<br>
+        }
+    </h5>
+</body>
+</html>

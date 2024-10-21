@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'Modeno';
+    src: url('Modeno.ttf') format('truetype'), 
+}
+
+body {
+    font-family: 'Modeno';
+}
